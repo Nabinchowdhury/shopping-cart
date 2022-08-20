@@ -18,6 +18,9 @@
          <h2>My shopping cart</h2>
          <div class="cart">
             <div class="col-md-12 col-lg-10 mx-auto">
+
+
+               <!-- =========iPhone=========== -->
                <div class="cart-item">
                   <div class="row">
                      <div class="col-md-7 center-item">
@@ -27,16 +30,17 @@
 
                      <div class="col-md-5 center-item">
                         <div class="input-group number-spinner">
-                           <button class="btn btn-default"><i class="fas fa-minus"></i></button>
-                           <input type="number" min="0" class="form-control text-center" value="1">
-                           <button class="btn btn-default"><i class="fas fa-plus"></i></button>
+                           <button class="btn btn-default"><i id="phone-btn-minus" class="fas fa-minus"></i></button>
+                           <input id="phone-field" type="number" min="0" class="form-control text-center" value="1">
+                           <button class="btn btn-default"><i id="phone-btn-plus" class="fas fa-plus"></i></button>
                         </div>
-                        <h5>$1219</h5>
+                        <h5>$ <span id="phone-price">1219</span></h5>
                         <img src="images/remove.png" alt="" class="remove-item">
                      </div>
                   </div>
                </div>
 
+               <!--============Case===========-->
                <div class="cart-item">
                   <div class="row">
                      <div class="col-md-7 center-item mx-auto">
@@ -45,17 +49,19 @@
                      </div>
                      <div class="col-md-5 center-item">
                         <div class="input-group number-spinner">
-                           <button class="btn btn-default"><i class="fas fa-minus"></i></button>
-                           <input type="number" min="0" class="form-control text-center" value="1">
-                           <button class="btn btn-default"><i class="fas fa-plus"></i></button>
+                           <button class="btn btn-default"><i id="case-btn-minus" class="fas fa-minus"></i></button>
+                           <input id="case-field" type="number" min="0" class="form-control text-center" value="1">
+                           <button class="btn btn-default"><i id="case-btn-plus" class="fas fa-plus"></i></button>
 
                         </div>
-                        <h5>$59</h5>
+                        <h5>$ <span id="case-price">59</span></h5>
                         <img src="images/remove.png" alt="" class="remove-item">
                      </div>
                   </div>
                </div>
 
+
+               <!-- ========Sub-Total========= -->
                <div class="cart-item">
                   <div class="row">
 
@@ -66,9 +72,9 @@
                      </div>
 
                      <div class="col-md-4 status">
-                        <h5>$1,278</h5>
-                        <h5>$0</h5>
-                        <h5>$1,278</h5>
+                        <h5>$<span id="sub-total">1,278</span></h5>
+                        <h5>$<span id="tax-total">12.78</span></h5>
+                        <h5>$<span id="all-total">1,278</span></h5>
                      </div>
                   </div>
                </div>
@@ -79,6 +85,12 @@
          </div>
       </div>
    </section>
+
+
+   <script src="js/phone.js"></script>
+   <script src="js/case.js"></script>
+   <script src="js/common.js"></script>
+
 </body>
 
 </html>
